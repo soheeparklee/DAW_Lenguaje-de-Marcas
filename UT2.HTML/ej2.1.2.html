@@ -1,0 +1,54 @@
+// html:5
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>¿Qué es el DOM?</h1>
+    <h3>Una introducción al Modelo de Objetos del Documento</h3>
+    <p>
+        <b>El Modelo de Objetos del Documento</b>, más conocido por sus siglas <abbr title="Document Object Model">DOM</abbr>, es una de las
+        tecnologías fundamentales en el desarrollo web. No es un lenguaje de programación, sino
+        una interfaz que representa cómo el navegador ve un documento HTML. Como bien dice un
+        desarrollador, <q>es como un árbol de objetos que representa la página</q>. 
+        <!-- para citas: <q> -->
+    </p>
+
+    <p>
+        La organización Mozilla Developer Network (<a href="https://developer.mozilla.org/es/docs/Web/API/Document_Object_Mod
+        el/Introduction">MDN</a>) lo define de una forma más formal en su
+        web:
+    </p>
+        
+            <blockquote>
+                El Modelo de Objetos del Documento (<abbr title="Document Object Model">DOM</abbr>) es una interfaz de programación para los
+                documentos HTML y XML. Facilita una representación estructurada del documento y define
+                de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo
+                y contenido.
+            </blockquote>
+        
+
+    <p>
+        Para interactuar con el <abbr title="Document Object Model">DOM</abbr>, usamos principalmente JavaScript. Por ejemplo, si
+        quisiéramos cambiar el texto de un párrafo con el id miParrafo, podríamos usar un código
+        como este:
+    </p>
+
+    <pre> <code>
+    // Seleccionamos el elemento por su ID
+    const parrafo = document.getElementById("miParrafo");
+    // Cambiamos su contenido de texto
+    parrafo.textContent = "¡Texto cambiado con JavaScript!"; </code>
+    </pre>
+    <!-- <pre> is for making space, and entering lines -->
+    <p>
+        Entender el <abbr title="Document Object Model">DOM</abbr> es, en definitiva, <strong><em>el primer paso</em></strong> para crear páginas web dinámicas e
+        interactivas.
+    </p>
+</body>
+</html>
