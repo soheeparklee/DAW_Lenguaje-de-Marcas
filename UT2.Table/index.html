@@ -4,32 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            border: 1px solid green;
+        }
+        td{
+            border: 1px solid blue;
+        }
+        th{
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <table>
         <thead>
-        <caption>Notas del Trimestre</caption>
+            <caption>Notas del Trimestre</caption>
+            <!-- row: <tr> -->
+            <!-- header: <th> -->
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Matemáticas</th>
+                <th scope="col">Lengua</th>
+                <th scope="col">Ciencias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- row: <tr> -->
+            <!-- header: <th> -->
+            <!-- data: <td> -->
+            <tr>
+                <th scope="row">Ana</th>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">Luis</th>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>AGRUPANDO CELDAS</h1>
+    <table>
         <tr>
-        <th scope="col"></th>
-        <th scope="col">Matemáticas</th>
-        <th scope="col">Lengua</th>
-        <th scope="col">Ciencias</th>
+            <td colspan="2">dato 1_1</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>AGRUPANDO FILAS</h1>
+    <table>
+        <tr>
+            <td rowspan="2"> a </td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Tabla con datos variados</caption>
+        <thead>
+        <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-        <th scope="row">Ana</th>
-        <td>9</td>
-        <td>8</td>
-        <td>10</td>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
         </tr>
         <tr>
-        <th scope="row">Luis</th>
-        <td>7</td>
-        <td>9</td>
-        <td>8</td>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
         </tr>
+        <!-- Más filas de datos... -->
         </tbody>
+        <tfoot>
+        <tr>
+        <td>Total 1</td>
+        <td>Total 2</td>
+        </tr>
+        </tfoot>
         </table>
 </body>
 </html>
