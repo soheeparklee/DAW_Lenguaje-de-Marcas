@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="respuesta.html" method="post">
+        <fieldset>
+            <legend>Identificación</legend>
+            <p>
+                <label for="usuario">Tu Usuario: </label>
+                <input type="text" id="usuario" required name="usuario">
+            
+                <label for="password">Tu Contraseña: </label>
+                <input type="password" id="password" required name="password">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Personales:</legend>
+            <p>Información a recibir: </p>
+            <p>
+                <input type="checkbox" id: "html" name: "recibir" value = "html"> 
+                <label for="html">Manual de Html</label>
+    
+                <input type="checkbox" id: "programa" name: "recibir" value = "programa"> 
+                <label for="programa">Programa Editor</label>
+                
+                <input type="checkbox" id: "ejemplos" name: "recibir" value = "ejemplos">
+                <label for="ejemplos"> Archivo de Ejemplos</label>
+    
+            </p>
+
+            <!-- label은 for이 있기 때문에 관련있는 것 옆에서 사용
+                tu usuario, password는 label
+                Informacion a recibir 은 p
+                Tu edad도 p
+                como encontraste mi pagina는 label
+                tus comentarios도 label
+            -->
+
+            <br>
+
+            <p>Tu edad:</p>
+            <input type="radio" name= "edad" value="menos 20"> Menos de 20 años
+            <input type="radio" name= "edad" value="entre 20"> Entre 20 y 40 años
+            <input type="radio" name= "edad" value="mas 40"> Más de 40 años
+
+            <br>
+
+            <p>
+
+            <label for="encontrar">Como encontraste mi página: </label>
+            <select name="manera" id="manera">
+                <option value="De casualidad" selected>De casualidad</option>
+                <option value="Por el buscador Google">Por el buscador Google</option>
+                <option value="Por el buscador Yahoo">Por el buscador Yahoo</option>
+                <option value="Me la comentaron">Me la comentaron</option>    
+            </select>
+            </p>
+
+            <br>
+
+            <p>
+                <label for="comentario">Tus Comentarios: </label> <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+            </p>
+
+            <br>
+
+            <button type="submit" name="enviar" id="enviar">Enviar</button>
+            <button type="reset" name="borrar" id="borrar">Borrar</button>
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <br>
+    <br>
+
+    <h2>Formulario de Feedback "Código Futuro 2025"</h2>
+    <p>Gracias por asistir! Por favor, tómate un momento para darnos tu opinión</p>
+    <fieldset>
+        
+    </fieldset>
+
+</body>
+</html>
