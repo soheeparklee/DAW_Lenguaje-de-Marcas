@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <!-- ❌ always use _ for space, like logo_img -->
+        <img src="assets/multimedia/img/logo.webp" 
+            alt="logo_img"
+            width="100" height="100">
+        <h1>Turbo Automóviles</h1>
+        <!-- ❌ if it has meaning, use <em> and <strong> not <i>, I used <i> -->
+        <p><em>Tu mejor elección en el mundo de la velocidad y el rendimiento</em></p>
+        
+        
+        <!-- navegacion -->
+            <!-- ❌ <nav> should be inside header -->
+        <nav>
+            <ul>
+                <!-- ❌index.html should be in root -->
+                <li><a href="./html/stores.html">Nuestras Tiendas</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="./html/contact_us.html">Contacto</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    
+
+    <!-- contenido principal -->
+    <main>
+        <!-- video promocional -->
+        <figure>
+            <video 
+            src="./assets/multimedia/video/sport_car.mp4"
+            autoplay
+            muted
+            loop
+            >
+            Tu navegador no soporta este contenido 
+            </video>
+            <figcaption>Descubre la emoción de conducir un Turbo Automóvil</figcaption>
+            <!-- ❌ create section for video, ❌  add between tags "Tu navegador no soporta este contenido" -->
+             <section>
+                <figure>
+
+                </figure>
+             </section>
+        </figure>
+        <!-- galeria de modelos -->
+          <!--  ❌ use section, not div, i used <div> -->
+        <section id="modelos">
+            <h2>Explora Nuestros Modelos</h2>
+
+            <!--  ❌ put content inside <div> -->
+            <div>
+               <h3>Modelos Disponibles:</h3>
+               <!--  ❌ for picture, use figure and figcaption, I used <div> and <p>. 
+                using Figure also creates space on the left  -->
+                <!-- figure*4>(a>img)+figcaption -->
+                <figure>
+                    <a href="sport_car.html"><img src="./assets/multimedia/img/sport.jpg" alt="sport">></a>
+                    <figcaption>Modelo Deportivo</figcaption>
+                </figure>
+                <figure>
+                    <a href="sport_car.html"><img src="./assets/multimedia/img/sedan.jpg" alt="sedan"></a>
+                    <figcaption>Modelo Familiar</figcaption>
+                </figure>
+                <figure>
+                    <a href="sport_car.html"><img src="./assets/multimedia/img/suv.jpg" alt="suv"></a>
+                    <figcaption>Modelo SUV</figcaption>
+                </figure>
+                <figure>
+                    <a href="sport_car.html"><img src="./assets/multimedia/img/luxury.jpg" alt="luxury"></a>
+                    <figcaption>Modelo Alta Gama</figcaption>
+                </figure>
+            </div>
+            
+            <!-- ❌ before, bad example -->
+            <!-- <blockquote>
+                <div>
+                    <a href="sport_car.html">
+                        <img src="../assets/multimedia/img/sport.jpg" alt="sport">
+                    </a>
+                    <p>Modelo Deportivo</p>
+                </div>
+                <div>
+                    <a href="sport_car.html">
+                        <img src="../assets/multimedia/img/sedan.jpg" alt="sedan">
+                    </a>
+                    <p>Modelo Familiar</p>
+                </div>
+                <div>
+                    <a href="sport_car.html">
+                        <img src="../assets/multimedia/img/suv.jpg" alt="suv">
+                    </a>
+                    <p>Modelo SUV</p>
+                </div>
+                <div>
+                    <a href="sport_car.html">
+                        <img src="../assets/multimedia/img/luxury.jpg" alt="luxury">
+                    </a>
+                    <p>Modelo Alta Gama</p>
+                </div>   
+            </blockquote>  -->
+
+
+            <!-- ❌ Use strong, I used h3 -->
+            <strong>Elije tu modelo favorito para verlo en detalle!</strong>
+        </section>
+        <!-- llamada a la accion -->
+         <!-- use section, I used div -->
+        <section>
+            <h2>Visítanos y prueba tu coche soñado!</h2>
+            <p>Turbo Automóviles cuenta con concesionarios en más de 20 ciudades para brindarte la mejor experiencia en la compra de tu vedículo.</p>
+             <!-- ❌ wrap <a> with <p> -->
+            <p><a href="stores.html">Encunta tu concesionario más cercano</a></p>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2025 Turbo Automóviles. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales: 
+            <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
