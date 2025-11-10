@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+</head>
+<body>
+    <form action="action.js" 
+        method="post" 
+        name="idenficiation"
+        enctype="multipart/form-data"
+        target="_self">
+        <fieldset name="idenficiation">
+            <legend>Identificatión</legend>
+
+            <label for="usuario">Tu usuario: </label>
+            <input type="text" name="usuario" id="usuario">
+
+            <label for="contraseña">Tu contraseña: </label>
+            <input type="password" name="contraseña" id="contraseña">
+        </fieldset>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            
+            <p>Información a recibir:</p>
+            <p>
+                <input type="checkbox" id="recibir1" value="html"> 
+                <label for="recibir1">Manual de HTML</label>
+                
+                <input type="checkbox" id="recibir2" value="editor"> 
+                <label for="recibir2">Programa Editor</label>
+
+                <input type="checkbox" id="recibir3" value="ejemplo"> 
+                <label for="recibir3">Archivo de Ejemplos</label>
+            </p>
+            
+            <p>
+                Tu edad:
+                <input type="radio" name="edad" id="edad1"> 
+                <label for="edad1">Menos de 20años</label>
+                <input type="radio" name="edad" id="edad2"> 
+                <label for="edad2">Entre 20 y 40 años</label>
+                <input type="radio" name="edad" id="edad3"> 
+                <label for="edad3">Más de 40 años</label>
+            </p>
+
+            <p>Como encontraste mi página:
+                <select name="contontrar" id="contontrar">
+                    <option value="De casualidad" selected>De casualidad</option>
+                    <option value="Por el buscador de Google">Por el buscador de Google</option>
+                    <option value="Por el buscador Yahoo">Por el buscador Yahoo</option>
+                </select>
+            </p>
+
+            <p>Tus Comentarios:</p>
+            <textarea name="commentario" id="comentario" cols="30" rows="5"></textarea>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </fieldset>
+    </form>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <h1>Formulatio de Feedback</h1>
+    <p>Gracias por asistir </p>
+
+    <form action="action.js" method="post" enctype="multipart/form-data" name="form">
+        <fieldset>
+            <legend>Informacion del Asistente(Optional)</legend>
+            <p>
+                <!-- ❌ add label -->
+                <label for="email">Tu correo Electronico:</label>
+                <input type="email" name="email" id="email" placeholder="tu@email.com">
+            </p>
+            <p>
+                <label for="perfil">Página Web o perfil..</label>
+                <input type="text" name="perfil" id="perfil" placeholder="https://">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Valoración</legend>
+            <p>
+                <label for="satisfaction">Satisfacción:</label>
+                0 <input id="satisfaction" type="range" min="0" max="10"> 10
+            </p>
+            <p>
+                <label for="organizacion">Valora la orgalizacion: (1 a 5)</label>
+                <input id="organizacion" type="number" min="0" max="5">
+            </p>
+            <p>
+                <!-- name has to be sameeeeeeeee!!!!!!!!! -->
+                Recomendarias este evento?
+                <br>
+                <input type="radio" name="recomendacion" id="radio_si" value="si">
+                <label for="radio_si">Si</label>
+                <br>
+                <input type="radio" name="recomendacion" id="radio_no" value="no">
+                <label for="radio_no">No</label>
+                <br>
+                <input type="radio" name="recomendacion" id="radio_quiza" value="quiza">
+                <label for="radio_quiza">Quiaza</label>
+            </p>
+            <p>
+                <label for="ponencia">Cual fue tu tipo de...</label>
+                <select name="ponencia" id="ponencia" >
+                    <option value="default" selected disabled>--Elige una categoria--</option>
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback Especifico</legend>
+            <p>
+                <p>Que aspectos te gustaron...</p>
+                <input type="checkbox" id="checkbox1" value="networking" name="aspectos"> 
+                <label for="checkbox1">Networking y socialización</label>
+                <br>
+                <input type="checkbox" id="checkbox2" value="calidad" name="aspectos">
+                <label for="checkbox2">Calidad</label>
+                <br>
+                <input type="checkbox" id="checkbox3" value="ubicacion" name="aspectos">
+                <label for="checkbox3">Ubicacion y lugar...</label>
+                <br>
+                <input type="checkbox" id="checkbox4" value="catering" name="aspectos">
+                <label for="checkbox4">catering</label>
+            </p>
+            <p>
+                <label for="mejorar">Que podríamos mejorar...??</label>
+                <br>
+                <textarea name="mejorar" id="mejorar" cols="40" rows="5" placeholder="Cualquier idea es bienvenida"></textarea>
+            </p>
+            <p>
+                <label for="sugierenos">sugierenos un tema para..</label> <br>
+                <input type="text" name="suegiernos" id="surgiernos" list="surgiernos_datalist">
+                <datalist id = "surgiernos_datalist">
+                    <option value="web">web</option>
+                    <option value="comp">comp</option>
+                    <option value="desarollo">desarollo</option>
+                </datalist>
+            </p>
+            <p>Adjuntar un archivo(opcional): <br>
+                <input type="file" 
+                    accept=".pdf"
+                    multiple>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="checkbox" id="confirmar" name="confirmar_checkbox" value="confirmar">
+            <label for="confirmar">Confirmo que mi feedback...</label>
+        </p>
+
+        <input type="sumbit" id="submit" value="Enviar Feedback">
+        <input type="reset" id="reset" value="Limpiar Formulario">
+
+
+    </form>
+</body>
+</html>
