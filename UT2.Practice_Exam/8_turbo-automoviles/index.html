@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/multimedia/img/logo.webp" alt="logo img" width="80" height="80">
+        <h1>Turbo Automóviles</h1>
+        <p><em>Tu mejor elección en el mundo de la velocidad y el rendimiento</em></p>
+        <!-- ❌nav는 header안에 들어간다 -->
+        <nav>
+            <ul>
+                <li><a href="html/stores.html">Nuestras Tiendas</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="html/contact_us.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. video promocional -->
+        <section>
+            <figure>
+                <!-- ❌ video title attribute -->
+                <video src="assets/multimedia/video/sport_car.mp4" autoplay loop muted
+                    title="Vídeo promocional de nuestros vehículos"></video>
+                <figcaption>Descubre la emoción de conducir un Turbo Automóvil.</figcaption>
+            </figure>
+        </section>
+        <!-- 2. galeria de modelos -->
+        <section id="modelos">
+            <h2>Explora Nuestros Models</h2>
+            <!-- ❌ 관련있는 것들은 div로 감싸기 -->
+            <div>
+                <h3>Modelos Disponibles:</h3>
+                <figure>
+                    <a href="html/stores.html">
+                        <!-- ❌ 폴더 구조 자세히 보기 -->
+                        <img src="assets/multimedia/img/sport.jpg" alt="modelo_deportivo">
+                    </a>
+                    <figcaption>Modelo Deportivo</figcaption>
+                </figure>
+                <figure>
+                    <a href="html/stores.html">
+                        <img src="assets/multimedia/img/sedan.jpg" alt="modelo_familiar">
+                    </a>
+                    <figcaption>Modelo Familiar</figcaption>
+                </figure>
+                <figure>
+                    <a href="html/stores.html">
+                        <img src="assets/multimedia/img/suv.jpg" alt="modelo_suv">
+                    </a>
+                    <figcaption>Modelo SUV</figcaption>
+                </figure>
+                <figure>
+                    <a href="html/stores.html">
+                        <img src="assets/multimedia/img/luxury.jpg" alt="modelo_alta_gama">
+                    </a>
+                    <figcaption>Modelo Alta Gama</figcaption>
+                </figure>
+
+                <p><strong>¡Elige tu modelo favorito para verlo en detalle!</strong></p>
+
+            </div>
+        </section>
+        <!-- 3. Llamada a la acción -->
+        <section>
+            <h2>¡Visítanos y prueba tu coche soñado!</h2>
+            <p>Turbo Automóviles cuenta con concesionarios en más de 20 ciudades para brindarte la mejor experiencia en
+                la compra de tu vehiculo.</p>
+            <p><a href="html/stores.html">Encuentra tu concesionario más cercano</a></p>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Ⓒ 2025 Turbo Automóviles. Todos los derechos reservados.</p>
+        <p>Siguenos en nuestras redes sociales:
+            <!-- ❌ 외부링크 열때는 target, rel 쓰기 -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </p>
+    </footer>
+</body>
+
+</html>

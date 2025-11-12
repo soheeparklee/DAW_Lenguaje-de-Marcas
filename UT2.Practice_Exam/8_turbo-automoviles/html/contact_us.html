@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Formulario de compra de coche</h1>
+        <figure>
+            <img src="../assets/multimedia/img/ibiza.png" alt="ibiza car image" width="300" height="150">
+            <figcaption>Modelo base: Seat Ibiza.</figcaption>
+        </figure>
+    </header>
+    <!-- main -->
+    <main>
+        <form action="action.js" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <p>
+                    <label for="nombre">Nombre completo(*):</label> <br>
+                    <!-- text는 minlength, maxlength 쓰기 -->
+                    <input type="text" id="nombre" required placeholder="Nombre completo" minlength="3">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono de contacto(*):</label> <br>
+                    <!-- ❌pattern [0-9]{9} -->
+                    <input type="tel" id="telefono" required placeholder="12345678" pattern="[0-9]{9}"
+                        title="Solo entra numeros">
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico(*):</label> <br>
+                    <input type="email" id="correo" required placeholder="ejemplo@correo.com">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos des vehículo</legend>
+
+                <p>
+                    <label for="modelo">Modelo del coche</label> <br>
+                    <select name="modelo_coche" id="modelo" required>
+                        <option value="instruciones" selected disabled>Seleccione un modelo</option>
+                        <option value="tesla">Tesla</option>
+                        <option value="kia">Kia</option>
+                        <option value="toyota">Toyota</option>
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="color">Seleccione el color:</label> <br>
+                    <input type="color" id="color" value="#FF0000">
+                </p>
+
+                <fieldset>
+                    <legend>Tipo de cambio</legend>
+
+                    <p>
+                        <input type="radio" name="tipo_cambio" id="cambio_automatico" value="automatico">
+                        <label for="cambio_automatico">Cambio automático</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="tipo_cambio" id="cambio_manual" value="manual" checked>
+                        <label for="cambio_manual">Cambio manual</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Características adicionales</legend>
+                    <p>
+                        <input type="checkbox" name="características_adicionales" id="características_gps" value="gps">
+                        <label for="características_gps">GPS</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="características_adicionales" id="características_asiento"
+                            value="asietno">
+                        <label for="características_asiento">Asientos de cuero</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="características_adicionales" id="características_camara"
+                            value="camara">
+                        <label for="características_camara">Cámara de marcha atrás</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="características_adicionales" id="características_sensor"
+                            value="sensor">
+                        <label for="características_sensor">Sensores de proximidad</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="características_adicionales" id="características_techo"
+                            value="techo">
+                        <label for="características_techo">Techo solar</label>
+                    </p>
+                </fieldset>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <label for="obervaciones">Observaciones o requerimientos especiales:</label> <br>
+                <textarea name="obervaciones" id="obervaciones" cols="20" rows="5"
+                    placeholder="Escriba sus obervaciones..."></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="acepto_privacidad" id="radio_privacidad" value="politica_privacidad"
+                    required>
+                <label for="radio_privacidad">Acepto política de privacidad (*)</label>
+            </div>
+
+            <br>
+
+            <button type="submit">
+                <img src="../assets/multimedia/img/car.png" alt="car image">
+                <span>Enviar solicitud de compra</span>
+            </button>
+
+            <p><small>Todos los campos marcados con (*) son obligatorios</small></p>
+        </form>
+    </main>
+    <!-- footer -->
+    <footer>
+        <hr>
+        <p><a href="../index.html">Volver a la página principal</a></p>
+    </footer>
+</body>
+
+</html>
