@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- So Hee Park -->
+    <title>Formulario de matrícula</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://site.educa.madrid.org/ies.claradelrey.madrid/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/cropped-fpclaradelreycm_110x50.png-logo.png" alt="clara-del-rey-logo" width="150">
+        </a>
+        <h1>IES CLARA DEL REY</h1>
+        <h2>Formulario de matrícula - Grado superior en informática</h2>
+    </header>
+    <main>
+        <form action="recibido.html" method="post" enctype="multipart/form-data" name="matricula_form">
+            <!-- Datos Personales -->
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <p>
+                    <label for="nombre">Nombre y Apellidos(*):</label> <br>
+                    <input type="text" id="nombre" name="nombre_y_apellido" minlength="5" maxlength="50" size="50"
+                        required autofocus placeholder="Nombre completo">
+                </p>
+
+                <p>
+                    <label for="dni">DNI/NIE(*):</label><br>
+                    <input type="text" id="dni" pattern="[0-9A-Z]{9}" title="Entra 8 números y una letra mayúscula."
+                        required placeholder="12345678A">
+                </p>
+                <p>
+                    <label for="nacimiento">Fecha de nacimiento(*):</label> <br>
+                    <input type="date" id="nacimiento" required>
+                </p>
+            </fieldset>
+            <!-- Contacto -->
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>
+                    <label for="telefono">Teléfono(*):</label> <br>
+                    <input type="tel" id="telefono" placeholder="123456789" pattern="[0-9]{9}"
+                        title="Entra 9 números enteros." required>
+                </p>
+                <p>
+                    <label for="correo">Correo electrónico(*):</label> <br>
+                    <input type="email" id="correo" placeholder="correo@dominio.com" required>
+                </p>
+                <p>
+                    <label for="dirrecion">Dirreción(*):</label> <br>
+                    <textarea name="form_dirrecion" id="dirrecion" cols="40" rows="3" placeholder="Dirreción completa"
+                        required></textarea>
+                </p>
+            </fieldset>
+            <!-- Estudios previos-->
+            <fieldset>
+                <legend>Estudios previos</legend>
+                <p>
+                    <label for="nivel_educativo">Nivel educativo alcanzado:</label> <br>
+                    <select name="nivel" id="nivel_educativo">
+                        <option value="medio">Grado medio</option>
+                        <option value="superior">Grado superior</option>
+                        <option value="bachillerato" selected>Bachillerato</option>
+                        <option value="universidad">Universidad</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="file_academico">Expediente académico(PDF):</label> <br>
+                    <input type="file" id="file_academico" accept="file/.pdf">
+                </p>
+            </fieldset>
+            <!-- Preferencias del grado -->
+            <fieldset>
+                <legend>Preferencias del grado</legend>
+                <p>
+                <p>Turno:</p>
+                <input type="radio" name="radio_turno" id="turno_manana">
+                <label for="turno_manana">Mañana</label>
+                <br>
+                <input type="radio" name="radio_turno" id="turno_tarde" checked>
+                <label for="turno_tarde">Tarde</label>
+                </p>
+                <p>
+                <p>Módulos de interés: </p>
+                <input type="checkbox" name="modulo_interes" id="programacion">
+                <label for="programacion">Programación</label>
+                <br>
+                <input type="checkbox" name="modulo_interes" id="redes">
+                <label for="redes">Redes</label>
+                <br>
+                <input type="checkbox" name="modulo_interes" id="base_de_datos">
+                <label for="base_de_datos">Base de Datos</label>
+                <br>
+                <input type="checkbox" name="modulo_interes" id="seguridad">
+                <label for="seguridad">Seguridad</label>
+                </p>
+            </fieldset>
+            <!-- Confirmación -->
+            <fieldset>
+                <legend>Confirmación</legend>
+                <p>Acepto los términos y condiciones(leer aquí: <a href="./politica.html" target="_blank"> <img
+                            src="../assets/img/terms.png" alt="terms_icon" width="20"></a>)(*):
+                    <input type="checkbox" required id="confirmación_checkbox" name="confirmación_check">
+                </p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reiniciar formulario</button>
+            </fieldset>
+            <p><small>Todos los campos marcados con (*) son obligatorios</small></p>
+        </form>
+    </main>
+    <footer>
+        <p><a href="../index.html" target="_self">Volver a revisar horarios</a></p>
+    </footer>
+</body>
+
+</html>

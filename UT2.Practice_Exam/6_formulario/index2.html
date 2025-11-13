@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Formulario</title>
+</head>
+
+<body>
+    <form action="envio.js" method="post">
+        <fieldset>
+            <legend>Identificación</legend>
+            <label for="nombre">Tu usuario: </label>
+            <input type="text" name="nombre" id="nombre" pattern="[a-z]{4,10}" title="bla bla"> value없는게 맞음
+
+            <label for="contraseña">Tu contraseña: </label>
+            <input type="password" name="contraseña" id="constraseña">
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+            <div>Informacion a recibir: </div>
+            <input type="checkbox" name="recibir_checkbox" id="html" value="html">
+            <label for="html">Manual de Html</label>
+            <input type="checkbox" name="recibir_checkbox" id="editor" value="editor">
+            <label for="editor">Program Editor</label>
+            <input type="checkbox" name="recibir_checkbox" id="archivo" value="archivo">
+            <label for="archivo">Archivo de Ejemplos</label>
+            </p>
+            <p>
+                <span>Tu edad: </span>
+                <input type="radio" name="edad_radio" id="menos_20" value="menos">
+                <label for="menos_20">Menos 20</label>
+                <input type="radio" name="edad_radio" id="2040" value="2040">
+                <label for="2040">2040</label>
+                <input type="radio" name="edad_radio" id="mas" value="40">
+                <label for="mas">Mas de 40</label>
+            </p>
+            <p>
+                <span>Como encontraste mi pagina: </span>
+                <select name="encontrar" id="enco">
+                    <option value="De casualidad" selected disabled> De casualidad</option>
+                    <option value="google">Google</option>
+                    <option value="yahoo">yahoo</option>
+                    <option value="">comentaron</option>
+                </select>
+            </p>
+
+
+            <select name="selecte" id="seli" multiple size="1">
+                <optgroup label="group one">
+                    <option value="one">11111</option>
+                    <option value="two">22222</option>
+                </optgroup>
+                <optgroup label="group two">
+                    <option value="one">11111</option>
+                    <option value="two">22222</option>
+                </optgroup>
+            </select>
+
+
+            <select name="oli" id="ole">
+                <optgroup label="navegador">
+                    <option value="google">Google</option>
+                    <option value="yahoo">yahoo</option>
+                    <option value="">comentaron</option>
+                </optgroup>
+                <optgroup label="navegador">
+                    <option value="google">Google</option>
+                    <option value="yahoo">yahoo</option>
+                    <option value="">comentaron</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>
