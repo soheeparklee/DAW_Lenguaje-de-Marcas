@@ -1,11 +1,11 @@
-body {
-    font-family: Arial, Verdana, sans-serif;
-    color: #665544;
-    padding: 10px;
-    }
-.page {
-    border: 1px solid #665544;
-    background-color: #efefef;
-    padding: inherit;
-    color: pink;
+#one{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#two{
+    background-color: hsl(0, 50%, 50%);
+}
+
+#three{
+    background-color: hsla(0, 50%, 50%, 0.5);
 }
