@@ -4,82 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style >
-    body {
-    margin: 0 ;
-    font-family : sans-serif ;
-    }
-    /* CASO 1: Cabecera */
-    header {
-    height: 400px;
-    /* Altura fija para forzar el espacio */
-    /* URL de una foto de paisaje aleatoria */
-    background-image:
-    url('https://picsum.photos/id/1015/1000/600');
-    /* A. No repetir la foto */
-    background-repeat: no-repeat;
-    /* B. Centrar la foto para que no se corte lo importante */
-    background-position: center center;
-    /* C. COVER: Escalar para rellenar todo el espacio sin
-    deformarse */
-    background-size: cover;
-    /* D. FIXED: Efecto Parallax. Al bajar, la foto se queda
-    quieta */
-    background-attachment: fixed;
-    /* Estilos para el texto (centrado) */
-    color: white;
-    text-align: center;
-    }
-    h1 {
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Fondo oscuro semitransparente para leer bien */
-    padding: 20px;
-    font-size: 3rem;
-    }
-    /* CASO 2: El Patrón (Mosaico) */
-    .patron {
-    height: 200px;
-    /* Imagen muy pequeña (50px) para que se vea la repetición
-    */
-    background-image:
-    url('https://placehold.co/50x50/orange/white?text=+');
-    /* REPEAT: Comportamiento por defecto, crea el mosaico */
-    background-repeat: repeat;
-    }
-    /* CASO 3: Imagen única posicionada */
-    .icono {
-    height: 200px;
-    background-color: #f0f0f0;
-    /* Color de fondo gris suave */
-    /* Imagen de una estrella */
-    background-image:
-    url('https://placehold.co/80x80/blue/white?text=★');
-    /* NO REPEAT: Solo una vez */
-    background-repeat: no-repeat;
-    /* POSITION: A la derecha y al centro verticalmente */
-    background-position: right center;
-    }
-    /* Títulos para separar secciones */
-    h2 {
-    padding-left: 20px;
-    background-color: #333;
-    color: white;
-    margin: 0;
-    padding: 10px;
-    }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-    </header>
-    <h1>Bienvenidos</h1>
-    <main>
-    <section class="patron">
-    <h2>Ejemplo de Repetición (Pattern)</h2>
-    </section>
-    <section class="icono">
-    <h2>Ejemplo de Posición (Right Center)</h2>
-    </section>
-    </main>
+    <div class="tarjeta-sol">
+    <q>Si lloras por no haber visto el Sol, las lágrimas no te
+        dejarán ver las estrellas</q>
+    </div>
+    <form action="subscribe.html" method="post">
+    <label for="email">Suscríbete: </label>
+    <input type="email" name="email" id="email">
+    <button class="boton-llamativo">Click aquí</button>
+    </form>
 </body>
 </html>

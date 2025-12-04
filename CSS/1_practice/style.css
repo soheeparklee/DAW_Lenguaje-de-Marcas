@@ -1,11 +1,24 @@
-#one{
-    background-color: rgba(0, 0, 0, 0.5);
+*{
+    
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.tarjeta-sol{
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, yellow, orange, red);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 15px;
+    font-weight:bold;
+    margin-bottom: 20px;
 
-#two{
-    background-color: hsl(0, 50%, 50%);
 }
-
-#three{
-    background-color: hsla(0, 50%, 50%, 0.5);
+.boton-llamativo{
+    font-size: 10px;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 15px;
+    border-style: hidden;
+    background: linear-gradient(to right, blue, purple);
 }
