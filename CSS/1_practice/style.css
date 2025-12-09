@@ -1,23 +1,44 @@
 *{
+    box-sizing: border-box;
+    font-family: Helvetica;
     
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.tarjeta-sol{
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, yellow, orange, red);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
-    padding: 15px;
-    font-weight:bold;
-    margin-bottom: 20px;
+
+
+body{
+    background-color: #fdfbf7;
 }
-.boton-llamativo{
-    font-size: 10px;
+.carta-menu{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 10px 5px lightgray;
+    border-top: 5px solid #4b3621;
+}
+
+h1{
+    text-align: center;   
+}
+
+h2{
+    color: #4b3621;
+}
+
+
+
+.tabla-precios{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+}
+.tabla-precios th{
+    padding: 10px;
+    background-color: #4b3621;
     color: white;
-    border-radius: 3px;
-    padding: 5px 15px;
-    border-style: hidden;
-    background: linear-gradient(to right, blue, purple);
+    text-align: left;
+}
+
+.tabla-precios td{
+    padding: 15px;
 }
