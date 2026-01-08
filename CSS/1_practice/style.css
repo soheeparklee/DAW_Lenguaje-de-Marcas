@@ -7,13 +7,14 @@
 
 body{
     background-color: #fdfbf7;
+    padding: 40px;
 }
 .carta-menu{
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
     background-color: white;
     padding: 40px;
-    box-shadow: 0 0 10px 5px lightgray;
+    box-shadow: 10px 10px 10px lightgray;
     border-top: 5px solid #4b3621;
 }
 
@@ -29,16 +30,17 @@ h2{
 
 .tabla-precios{
     width: 100%;
-    border-bottom: 1px solid gray;
     border-collapse: collapse;
 }
 .tabla-precios th{
-    padding: 10px;
     background-color: #4b3621;
     color: white;
     text-align: left;
+    padding: 15px
 }
 
 .tabla-precios td{
     padding: 15px;
+    border-bottom: 1px solid gray;
+
 }
