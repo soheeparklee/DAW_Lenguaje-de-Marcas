@@ -1,0 +1,31 @@
+body{
+    background: url(https://img.icons8.com/emoji/48/000000/star-emoji.png) repeat-y;
+}
+
+h1{
+    margin-left: 50px;
+    color: green;
+}
+p{
+    margin-left: 50px;
+}
+strong{
+    color: red;
+}
+.destacado{
+    color: orange;
+}
+
+#subtitulo{
+    margin-left: 50px;
+    color: blue;
+}
+em{
+    color: blue;
+}
+#adicional{
+    color: purple;
+}
+#especial2{
+    color: hotpink;
+}

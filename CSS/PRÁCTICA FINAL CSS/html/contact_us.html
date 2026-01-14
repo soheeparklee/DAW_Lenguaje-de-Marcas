@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de compra de coche</title>
+    <link rel="stylesheet" href="../assets/styles/styles_form.css">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario de compra de coche</h1>
+    </header>
+
+    <main>
+        <form action="./respuesta.html" method="post">
+
+            <figure>
+                <img src="../assets/multimedia/img/ibiza.png" alt="Seat Ibiza gris metalizado" title="Seat Ibiza"
+                    height="200">
+                <figcaption>Modelo base: Seat Ibiza.</figcaption>
+            </figure>
+
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <p>
+                    <label for="nombre">Nombre completo (*):</label><br>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" autofocus
+                        placeholder="Nombre completo">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono de contacto (*):</label><br>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="123456789">
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico (*):</label><br>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del vehículo</legend>
+
+                <p>
+                    <label for="modelo">Modelo del coche:</label><br>
+                    <select id="modelo" name="modelo" required>
+                        <option value="">Seleccione un modelo</option>
+                        <option value="sedan">Sedán</option>
+                        <option value="suv">SUV</option>
+                        <option value="hatchback">Hatchback</option>
+                        <option value="coupe">Coupé</option>
+                        <option value="pickup">Pickup</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="color">Seleccione el color:</label><br>
+                    <input type="color" id="color" name="color" value="#FF0000">
+                </p>
+
+                <fieldset>
+                    <legend>Tipo de cambio</legend>
+                    <p>
+                        <input type="radio" value="automatico" name="cambio" id="automatico">
+                        <label for="automatico">Cambio automático</label>
+                    </p>
+                    <p>
+                        <input type="radio" value="manual" name="cambio" id="manual" checked>
+                        <label for="manual">Cambio manual</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Características adicionales</legend>
+                    <p>
+                        <input type="checkbox" id="gps" name="extras" value="GPS">
+                        <label for="gps">GPS</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="asientos_cuero" name="extras" value="cuero">
+                        <label for="asientos_cuero">Asientos de cuero</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="camara_marcha_atras" name="extras" value="camara">
+                        <label for="camara_marcha_atras">Cámara de marcha atrás</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="sensor_proximidad" name="extras" value="sensor">
+                        <label for="sensor_proximidad">Sensores de proximidad</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="techo_solar" name="extras" value="Techo solar">
+                        <label for="techo_solar">Techo solar</label>
+                    </p>
+                </fieldset>
+            </fieldset>
+
+            <p>
+                <label for="observaciones">Observaciones o requerimientos especiales:</label><br>
+                <textarea id="observaciones" name="observaciones" rows="4" maxlength="300"
+                    placeholder="Escriba sus observaciones..."></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="acepto" id="acepto" required><label for="acepto">Acepto política de
+                    privacidad (*)</label>
+            </p>
+            <p>
+                <button type="submit"><img src="../assets/multimedia/img/car.png" alt="" width="32"> Enviar solicitud de
+                    compra</button>
+            </p>
+            <p><small>Todos los campos marcados con (*) son obligatorios</small></p>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p><a href="../index.html">Volver a la página principal</a></p>
+    </footer>
+
+</body>
+
+</html>

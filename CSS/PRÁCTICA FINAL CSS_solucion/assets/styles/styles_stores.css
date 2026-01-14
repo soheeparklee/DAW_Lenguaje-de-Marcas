@@ -1,0 +1,62 @@
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA STORES.HTML
+   ========================================= */
+
+/* Layout principal: Lista izquierda, mapa derecha */
+main.store-locator {
+    display: flex;       /* Elementos en fila */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    align-items: flex-start; /* Alineamos arriba para que no se estiren si tienen alturas distintas */
+}
+
+
+/* Columna de Navegación (Lista de ciudades) */
+main.store-locator nav {
+    width: 30%;          /* Ocupa un tercio aproximadamente */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Estilo de la lista ordenada */
+main.store-locator ol {
+    padding: 0;
+    margin: 0;
+    color: grey;
+}
+
+main.store-locator li {
+    margin-bottom: 10px;
+}
+
+/* Estilo de los enlaces como botones */
+main.store-locator a {
+    display: block;      /* Para que ocupe todo el ancho y sea fácil de clicar */
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc; /* Indicador visual desactivado */
+}
+
+main.store-locator a:hover {
+    background-color: #ffebee;
+    border-left-color: #d32f2f;  /* Rojo al pasar el ratón */
+    color: #d32f2f;
+    padding-left: 20px;          /* Pequeño desplazamiento visual */
+}
+
+/* Columna del Mapa (Iframe) */
+iframe[name="visor-mapa"] {
+    width: 70%;          /* El mapa ocupa el resto del espacio */
+    height: 500px;       /* Altura fija cómoda para ver mapas */
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    background-color: #eee; /* Color de fondo mientras carga */
+    margin-left: 20px;
+}

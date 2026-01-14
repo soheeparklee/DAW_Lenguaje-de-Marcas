@@ -1,0 +1,104 @@
+/* Estilos generales del formulario */
+form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Fieldset y Legend */
+fieldset {
+    border: 1px solid #eee;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Selectores de Atributo para campos de texto/selección */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    /* Ocupan todo el ancho de su contenedor padre */
+    padding: 10px;
+    margin-top: 5px;
+    /* Separación del label */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Pseudo-clase para campos obligatorios */
+input[required],
+select[required],
+textarea[required] {
+    border-left: 5px solid rgb(211, 47, 47);
+}
+
+/* Pseudo-clase :focus para feedback de usuario */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    /* Quitamos el borde por defecto del navegador */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Checkboxes y Radios */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #d32f2f; /* Esta propiedad cambia el color de radios y checkboxes */
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    margin: 15px 0px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(211, 47, 47, 0.4);
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(211, 47, 47, 0.7);
+}
+
+/* Imagen dentro del botón */
+button[type="submit"] img {
+    vertical-align: middle;
+    /* Alinea el icono con el texto */
+    margin-right: 10px;
+}
+
+small {
+    font-weight: bold;
+    color: rgb(211, 47, 47);
+}

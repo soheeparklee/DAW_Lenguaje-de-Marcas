@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+}
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#top img{
+    margin-left: 20px;
+    width: 130px;
+}
+
+.main-title{
+    text-align: center;
+    width: 100%;    
+    margin: 30px;
+}
+#top h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+#top p{
+    text-align: center;
+    color: gray;
+}
+
+/* navigation */
+nav{
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    background-color: black;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li{
+    padding: 15px 25px;
+}
+
+a{
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+
+}
+
+/* main */
+/* container */
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    width: 70%;
+}
+#video{
+    margin: 20px;
+    border-bottom: 2px solid black;
+}
+
+#video video{
+    border-radius: 10px;
+    margin: 10px 20px;
+    width: 700px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 10px 5px lightgray;
+}
+
+#video figcaption{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#models{
+    margin: 20px;
+}
+
+#models h2{
+    margin-bottom: 20px;
+}
+
+#models h3{
+    margin-bottom: 20px;
+}
+
+.gallery-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+section{
+
+}
+
+/* aside */
+aside{
+    width: 25%;
+}
+
+/* footer */
+
+/* back top */

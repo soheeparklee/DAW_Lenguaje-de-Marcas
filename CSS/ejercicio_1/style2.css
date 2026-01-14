@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./imagen_redimensionada.png");
+}
+
+ul{
+    background-color: green;
+    border: 1px solid white;
+    width: 200px;
+}
+li{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h1{
+    text-transform: uppercase;
+    text-align: left;
+    padding: 15px;
+    border: 2px solid black;
+}
+.desc{
+    background-color: blueviolet;
+    border: 15px solid navy;
+    width: 300px;
+    color: white;
+    padding: 0 10px;
+}
+#fin1{
+    text-align: right;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+#fin2{
+    text-align: right;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#fin3{
+    text-align: right;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
