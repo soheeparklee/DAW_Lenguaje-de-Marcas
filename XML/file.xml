@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE miembros> <!--podríamos obviar esta línea-->
+<miembros xmlns:alumn="http://DAW/Alumnos/Alumnos.xml"
+xmlns:prof="urn:Instituto:Profesores" xmlns="http:por-defecto.html">
+    <alumn:nombre>Fernando Fernández González</alumn:nombre>
+    <alumn:nombre>Isabel González Fernández</alumn:nombre>
+    <alumn:nombre>Ricardo Martínez López
+        <dni tpo="nie"></dni>
+    </alumn:nombre>
+    <prof:nombre>Pilar Ruiz Pérez</prof:nombre>
+    <prof:nombre>Tomás Rodríguez Hernández</prof:nombre>
+</miembros>
+
+<!-- prefijo asociado가 없는 xmlns는 default로 만들 수 있다 -->
