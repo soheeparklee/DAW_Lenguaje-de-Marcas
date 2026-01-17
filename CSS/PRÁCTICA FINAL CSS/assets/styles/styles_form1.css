@@ -1,0 +1,105 @@
+
+form{
+    max-width: 700px;
+    min-width: 700px;
+    background-color: aliceblue;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px lightgray;
+}
+
+fieldset{
+    margin: 30px 0;
+    position: relative;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+fieldset legend{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    font-weight: 900;
+}
+
+fieldset p{
+    margin: 10px 0;
+}
+
+p label{
+    font-weight: 900;
+}
+
+fieldset input[type="text"],
+input[type="tel"],
+input[type="email"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    border-left: 5px solid red;
+}
+
+fieldset input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus{
+    outline: none;
+    box-shadow: 5px 5px 10px 3px lightgray;
+}
+
+input[type="color"]{
+    border: 1px solid gray;
+    width: 10%;
+    height: 30px;
+    padding: 1px;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    cursor: pointer;
+    /* radio/checkbox의 색깔 바꾸기 */
+    accent-color: #d32f2f;  
+}
+
+#observaciones{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#acepto{
+    margin-right: 10px;
+}
+
+button[type="submit"]{
+    background-color: hsl(0, 59%, 70%, 0.5);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 10px 0;
+    border: none;
+}
+
+button[type="submit"]:hover{
+    background-color: hsl(0, 59%, 69%);;
+}
+
+button[type="submit"] img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+p small{
+    font-weight: 600;
+    color: red;
+}

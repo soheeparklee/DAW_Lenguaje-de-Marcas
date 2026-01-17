@@ -57,3 +57,49 @@ section dd{
     margin-bottom: 20px;
     font-size: 0.9rem;
 }
+
+table, tr, th, td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+
+section table{
+    width: 900px;
+    margin: 50px;
+}
+
+table caption{
+    text-align: right;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+thead{
+    
+}
+thead tr{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+th{
+    padding: 15px;
+}
+
+td{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody th[colspan="3"]{
+    background-color: gray;
+    color: red;
+}
+
+tbody th[scope="row"]{
+    text-align: left;
+}

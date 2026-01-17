@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+
+}
+header{
+    background-color: #fff;
+    border-bottom: 5px solid #d32f2f;
+    padding: 10px 0;;
+    /* display: flex;
+    /* ❓ header높이 어떻게 설정?height: auto; */
+    /* height: 80px; */
+}
+
+/* main */
+.store-locator{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: auto;
+}
+
+nav{
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    height: 250px;
+    margin: 20px;
+    padding: 0;
+    box-shadow: 3px 3px 4px 3px lightgray;
+}
+ol{
+    padding-left: 20px;
+}
+
+li{
+    cursor: pointer;
+    background-color: lightgray;
+    margin: 20px 10px;
+    padding: 10px;
+    border-left: 3px solid gray;
+
+}
+
+li:hover{
+    background-color: lightcoral;
+    border-left: 3px solid red;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+iframe {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 3px lightgray;
+
+}
+
+footer{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p a{
+    color: white;
+}
