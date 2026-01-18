@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tienda de Té</title>
+  <link href="./css/ejercicio_completo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1>Tienda de Té "El Jardín del Té"</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Sobre Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div id="layout"><!-- Posicionamiento de main y aside -->
+    <main>
+      <section class="destacado">
+        <img src="./img/te_destacado.jpg" alt="Té Destacado">
+        <h2>Té Verde Matcha</h2>
+        <p class="descripcion">El té verde matcha es conocido por sus propiedades antioxidantes y su sabor único.</p>
+        <button>Comprar Ahora</button>
+      </section>
+      <section class="productos">
+
+        <table class="tabla-productos">
+          <caption>Nuestros Productos</caption>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Té Negro Earl Grey</td>
+              <td>Una mezcla de té negro con esencia de bergamota.</td>
+              <td>€15</td>
+            </tr>
+            <tr>
+              <td>Té Blanco Baihao Yinzhen</td>
+              <td>Uno de los tés blancos más apreciados por su delicadeza.</td>
+              <td>€25</td>
+            </tr>
+            <tr>
+              <td>Té Oolong</td>
+              <td>Un té semifermentado con un sabor único y complejo.</td>
+              <td>€20</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="equipo">
+        <div>
+        <h2>Nuestro Equipo</h2>
+        <img id="img_equipo" src="./img/equipo.jpg" alt="Nuestro Equipo">
+        </div>
+        <div class="contenedor-equipo">
+          <p>Conoce a las personas detrás de nuestra tienda de té:</p>
+          <ul>
+            <li>María García - Fundadora y experta en té</li>
+            <li>Juan Pérez - Encargado de ventas</li>
+            <li>Carmen López - Atención al cliente</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <h3>Testimonios</h3>
+      <p>"El mejor té que he probado. ¡Altamente recomendado!" - Ana Rodríguez</p>
+      <p>"Servicio excelente y productos de calidad." - Luis Fernández</p>
+    </aside>
+  </div>
+  <footer>
+    <p>&copy;2025 El Jardín del Té - Todos los derechos reservados</p>
+  </footer>
+</body>
+
+</html>

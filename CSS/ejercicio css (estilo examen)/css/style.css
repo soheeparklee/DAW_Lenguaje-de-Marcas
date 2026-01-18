@@ -1,0 +1,192 @@
+/* reset, body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+} */
+/* header */
+header{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, green, lightgreen);
+    color: white;
+}
+
+/* nav */
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+nav li{
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    background-color: brown;
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+}
+
+/* ❓❓ li에 hover가 되었을 때 a의 속성을 바꾸기!!! */
+nav ul li:hover,nav ul li a:focus{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* nav ul li:hover,
+nav ul li a:focus {
+    text-decoration: underline;
+} */
+
+
+/* main */
+#layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* 💡this is the solution */
+    margin: auto;
+    /* padding: 0 2rem; */
+}
+main{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 70%;
+    /* min-width: none;
+    margin: 10px; */
+}
+/* section 1 */
+.destacado{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 10px;
+    margin: 10px auto;
+    /* 💡 this is the solution */
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px black;
+
+}
+.destacado img{
+    margin: 10px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.destacado h2{
+    margin: 5px;
+    color: green;
+}
+.descripcion{
+    color: gray;
+}
+.destacado button{
+    margin: 20px 0 10px;
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.destacado button:hover{
+    background-color: darkgreen;
+}
+/* section 2 */
+.tabla-productos{
+    margin: 30px auto;
+    width: 80%;
+    border-collapse: collapse;
+    /* check, something doesnt look right */
+    box-shadow: 1px 1px 5px black;
+    /* box-shadow: 0 4px 8px rgb(0, 0, 0); */
+}
+.tabla-productos caption{
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.tabla-productos table, tr, th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabla-productos thead{
+    background-color: brown;
+    color: white;
+}
+
+.negro, .oolong{
+    background-color: lightgray;
+}
+
+/* section 3 */
+.equipo{
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, cornsilk, white);
+}
+.equipo_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.equipo img{
+    width: 60%;
+    border-radius: 10px;
+}
+.contenedor-equipo{
+    margin: 20px;
+}
+.contenedor-equipo p{
+    font-size: 1.2rem;
+}
+.contenedor-equipo li{
+    list-style: none;
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* aside */
+/* ❓❓❓ 계속 aside가 겹쳐진다 */
+/* 이건 main과 aside의 width 를 각각 60, 25로 해결 */
+/* 그리고 .container의  justify-content: space-between;*/
+
+/* ❓❓❓근데 왜 화면 작아졌을 때 aside만 사라짐? 왜 main은 작아지다 말음?? */
+aside{
+    /* right: 0;
+    top: 0; */
+    width: 20%;
+    background-color: lightgreen;
+    padding: 10px;
+}
+aside p{
+    display: block;
+    /* p끼리 한 줄씩 띄게 만들기?? */
+    /* 💊 margin: 15px 0px;  */
+}
+
+/* footer */
+footer{
+    padding: 20px;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
