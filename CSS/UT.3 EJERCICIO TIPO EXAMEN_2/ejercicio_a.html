@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio A</title>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenido a mi sitio web</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Sobre mí</a></li>
+      <li><a href="#">Portafolio</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <main>
+      <section class="tarjeta-perfil">
+        <img src="img/perfil.webp" alt="Foto de Perfil">
+        <h2>Juan Pérez</h2>
+        <p class="descripcion">Desarrollador Web</p>
+      </section>
+
+      <section class="formacion">
+        <h2>Formación académica</h2>
+        <table class="tabla-estudios">
+          <caption>Mis estudios</caption>
+          <thead>
+            <tr>
+              <th>Centro</th>
+              <th>Grado</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IES Nombre centro 1</td>
+              <td>ESO</td>
+              <td>Terminado</td>
+            </tr>
+            <tr>
+              <td>IES Nombre centro 2</td>
+              <td>Bachillerato</td>
+              <td>Terminado</td>
+            </tr>
+            <tr>
+              <td>IES Nombre centro 3</td>
+              <td>DAM</td>
+              <td>Cursando estudios</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="aficiones">
+        <div class="equipo">
+          <h2>Sobre mí</h2>
+          <img src="img/programador.jpg" alt="sobre mí">
+        </div>
+        <div class="contenedor-sobre-mi">
+          <p>Trabajo como programador a tiempo completo. Otros <span>datos de interés:</span></p>
+          <ol>
+            <li>Carnet de conducir</li>
+            <li>Aficiones:
+              <ul>
+                <li id="deporte">Deportes</li>
+                <li id="cine">Cine</li>
+                <li id="naturaleza">Naturaleza</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <h3>Enlaces de interés</h3>
+      <a href="#">Enlace 1</a>
+      <a href="#">Enlace 2</a>
+      <a href="#">Enlace 3</a>
+      <h3>¿Quieres estar al tanto de las novedades?. ¡Suscríbete!</h3>
+      <form action="#">
+        <input type="email" name="email" id="email" placeholder="Dirección de correo">
+        <input type="submit" id="submit" value="Suscribir">
+      </form>
+    </aside>
+  </div>
+  <footer>
+    <p>&copy;2025 Juan Pérez - Todos los derechos reservados</p>
+  </footer>
+</body>
+
+</html>
