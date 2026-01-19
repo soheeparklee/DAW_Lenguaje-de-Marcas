@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+header, footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* height?? */
+    height: 400px;
+}
+.wrapper article{
+    width: 70%;
+    background-color: lightcoral;
+}
+
+.wrapper aside{
+    width: 30%;
+    background-color: lightcoral;
+}
