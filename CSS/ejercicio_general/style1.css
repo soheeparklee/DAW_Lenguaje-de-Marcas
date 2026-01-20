@@ -1,0 +1,42 @@
+body{
+    height: 2000px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+
+.chat-window{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: white;
+    z-index: 10;
+}
+.header-chat{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.mensajes{
+    overflow: auto;
+    border-bottom: 1px solid gray;
+    height: 200px;
+    padding: 5px;
+}
+.input-area{
+    padding: 10px;
+}
+.input-area input[type="text"]{
+    /* width?? */
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-area input[type="text"]:focus{
+    background-color: blue;
+    outline: none;
+}

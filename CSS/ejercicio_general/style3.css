@@ -1,0 +1,22 @@
+li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    display: block;
+    background-color: #007bff;
+    color: white;
+    font-weight: 900;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover{
+    background-color: orange;
+    text-decoration: underline;
+
+}
+a:active{
+    background-color: red;
+    text-decoration: underline;
+}

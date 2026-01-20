@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+body{
+    background-color: #1a1a2e;
+}
+.formulario-registro{
+    border-top: 4px solid #0f3460;
+    width: 400px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #16213e;
+    box-shadow: 10px 10px 10px 10px black;
+    
+}
+
+.formulario-registro h2{
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 5px 0;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 0.5rem;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    outline: none;
+
+}
+input[required]{
+    border-left: 4px solid #e94560;
+}
+input[type="submit"]{
+    background-color: #e94560;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+p small{
+    color: #e94560;
+}
+input[type="password"]{
+    letter-spacing: 3px;
+}
