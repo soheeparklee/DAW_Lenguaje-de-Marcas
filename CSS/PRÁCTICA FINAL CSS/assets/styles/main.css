@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#top{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid red;
+}
+#top img{
+    margin-left: 30px;
+    width: 130px;
+}
+.main-title{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#top h1{
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* nav */
+nav{
+    border-bottom: 5px solid red;
+    background-color: black;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+nav ul li a:hover{
+    background-color: red;
+}
+
+/* div */
+.container{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+/* main */
+main{
+    width: 70%;
+}
+/* section 1 video */
+#video{
+    border-bottom: 2px solid black;
+}
+#video figure video{
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 2px 5px 5px 4px lightgray;
+}
+#video figcaption{
+    text-align: center;
+    margin: 20px 0;
+}
+/* section 2 models */
+h2{
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+h3{
+    margin: 30px 0;
+}
+#models{
+    margin: auto;
+    border-bottom: 2px solid black;
+
+}
+.gallery-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery-grid figure{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px 2px lightgray;
+}
+.gallery-grid img{
+    margin: 0 auto 10px auto;
+    width: 100%;
+    border-radius: 10px;
+}
+figure figcaption{
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+
+#models .on-sale{
+    background-color: yellow;
+    border: 1px solid orange;
+    position: relative;
+}
+.sale-text{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+#models .sold-out{
+    background-color: lightgray;
+    border: 1px dashed gray;
+    position: relative;
+}
+.sold-out-text{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: lightgray;
+    color: gray;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 900;
+    box-shadow: 2px 2px 5px 2px gray;
+}
+
+.message{
+    margin: 30px 0;
+    color: gray;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 10px 0;
+    box-shadow: 3px 3px 5px 3px gray;
+}
+
+/* section 3 */
+section p{
+    width: 90%;
+    margin: 20px 0;
+
+}
+
+.btn-cta{
+    margin: 10px 0;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* aside */
+aside{
+    width: 25%;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: pink;
+    font-weight: 900;
+}
+
+/* back top */
+.back-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
